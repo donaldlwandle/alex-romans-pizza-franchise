@@ -1,0 +1,14 @@
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\bin\Debug\Alexandra-romans-pizza.exe.config
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\bin\Debug\Alexandra-romans-pizza.exe
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\bin\Debug\Alexandra-romans-pizza.pdb
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra-romans-pizza.csproj.AssemblyReference.cache
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra-romans-pizza.csproj.SuggestedBindingRedirects.cache
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra_romans_pizza.Properties.Resources.resources
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra-romans-pizza.csproj.GenerateResource.cache
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra-romans-pizza.csproj.CoreCompileInputs.cache
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra-romans-pizza.exe
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra-romans-pizza.pdb
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra_romans_pizza.MainForm.resources
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra_romans_pizza.OrderForm.resources
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra_romans_pizza.RegisterForm.resources
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\Alexandra-romans-pizza\obj\Debug\Alexandra_romans_pizza.BagForm.resources

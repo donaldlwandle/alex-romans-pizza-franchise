@@ -1,0 +1,12 @@
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\bin\Debug\net6.0\RomansPizzaLibrary.deps.json
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\bin\Debug\net6.0\RomansPizzaLibrary.dll
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\bin\Debug\net6.0\RomansPizzaLibrary.pdb
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\RomansPizzaLibrary.csproj.AssemblyReference.cache
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\RomansPizzaLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\RomansPizzaLibrary.AssemblyInfoInputs.cache
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\RomansPizzaLibrary.AssemblyInfo.cs
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\RomansPizzaLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\RomansPizzaLibrary.dll
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\refint\RomansPizzaLibrary.dll
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\RomansPizzaLibrary.pdb
+C:\Users\Donald1\P\C# INFS122\Alexandra-romans-pizza\RomansPizzaLibrary\obj\Debug\net6.0\ref\RomansPizzaLibrary.dll

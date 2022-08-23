@@ -74,7 +74,7 @@
             this.pizzasLabel.AutoSize = true;
             this.pizzasLabel.BackColor = System.Drawing.Color.Transparent;
             this.pizzasLabel.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pizzasLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
+            this.pizzasLabel.ForeColor = System.Drawing.Color.White;
             this.pizzasLabel.Location = new System.Drawing.Point(40, 277);
             this.pizzasLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pizzasLabel.Name = "pizzasLabel";
@@ -93,7 +93,7 @@
             this.addOtherMealBtn.Name = "addOtherMealBtn";
             this.addOtherMealBtn.Size = new System.Drawing.Size(89, 30);
             this.addOtherMealBtn.TabIndex = 4;
-            this.addOtherMealBtn.Text = "Add";
+            this.addOtherMealBtn.Text = "Order now";
             this.addOtherMealBtn.UseVisualStyleBackColor = false;
             this.addOtherMealBtn.Click += new System.EventHandler(this.addOtherMealBtn_Click);
             // 
@@ -120,7 +120,7 @@
             this.addDrinksBtn.Name = "addDrinksBtn";
             this.addDrinksBtn.Size = new System.Drawing.Size(89, 30);
             this.addDrinksBtn.TabIndex = 4;
-            this.addDrinksBtn.Text = "Add";
+            this.addDrinksBtn.Text = "Order now";
             this.addDrinksBtn.UseVisualStyleBackColor = false;
             this.addDrinksBtn.Click += new System.EventHandler(this.addDrinksBtn_Click);
             // 
@@ -146,7 +146,7 @@
             this.panel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
             this.panel4.Location = new System.Drawing.Point(-2, 27);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1157, 98);
+            this.panel4.Size = new System.Drawing.Size(1162, 98);
             this.panel4.TabIndex = 10;
             // 
             // orderSizeLabel
@@ -154,7 +154,7 @@
             this.orderSizeLabel.AutoSize = true;
             this.orderSizeLabel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.orderSizeLabel.ForeColor = System.Drawing.Color.Orange;
-            this.orderSizeLabel.Location = new System.Drawing.Point(1078, 61);
+            this.orderSizeLabel.Location = new System.Drawing.Point(1113, 61);
             this.orderSizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.orderSizeLabel.Name = "orderSizeLabel";
             this.orderSizeLabel.Size = new System.Drawing.Size(15, 17);
@@ -165,7 +165,8 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1091, 61);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(1085, 61);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 17);
@@ -176,6 +177,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(126, 35);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -194,7 +196,7 @@
             this.addPizzaBtn.Name = "addPizzaBtn";
             this.addPizzaBtn.Size = new System.Drawing.Size(89, 30);
             this.addPizzaBtn.TabIndex = 4;
-            this.addPizzaBtn.Text = "Add";
+            this.addPizzaBtn.Text = "Order now";
             this.addPizzaBtn.UseVisualStyleBackColor = false;
             this.addPizzaBtn.Click += new System.EventHandler(this.addPizzaBtn_Click);
             // 
@@ -273,10 +275,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Alexandra_romans_pizza.Properties.Resources.romanslogo;
+            this.pictureBox1.Image = global::Alexandra_romans_pizza.Properties.Resources.logo_shield;
             this.pictureBox1.Location = new System.Drawing.Point(41, 23);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 66);
+            this.pictureBox1.Size = new System.Drawing.Size(66, 66);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -286,7 +288,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(1149, 657);
+            this.ClientSize = new System.Drawing.Size(1158, 657);
             this.Controls.Add(this.minimise);
             this.Controls.Add(this.pizzasLabel);
             this.Controls.Add(this.maximise);
@@ -302,7 +304,7 @@
             this.Controls.Add(this.otherMealLabel);
             this.Controls.Add(this.menuLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
+            this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainForm";

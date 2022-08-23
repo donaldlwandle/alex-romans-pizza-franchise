@@ -59,6 +59,11 @@
     <Compile Include="Models\OderItemModel.cs" />
     <Compile Include="Models\OptionModel.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +99,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -109,25 +115,31 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\rsz_romanslogo.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\shopping-bag.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pizza.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\other-meals.jpg" />
+    <None Include="Resources\Image1.bmp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\drinks.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pizza1.jpg" />
+    <None Include="Resources\other-meals.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pizza2.jpg" />
+    <None Include="Resources\pizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\romanslogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

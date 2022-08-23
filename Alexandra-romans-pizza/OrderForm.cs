@@ -1,4 +1,7 @@
-﻿using RomansPizzaLibrary;
+﻿// Developer  : DL Ntuli
+// Date : 15/ August/ 2022
+// Title: Alexandras Ramans Pizza Ordering App
+using RomansPizzaLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,6 +65,8 @@ namespace Alexandra_romans_pizza
             bs.DataSource = new List<int> {1,2,3,4,5,6,7,8,9,10 };
             quantityBox.DataSource = bs;
 
+            itemPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+
             itemNameLabel.Text = currentMenuItem.mealName;
             itemPrizeLabel.Text = "R " + price;
             firstOptionLabel.Text = currentMenuItem.firstOptionTitle;
@@ -72,6 +77,22 @@ namespace Alexandra_romans_pizza
 
             secondOptionBox.DataSource = currentMenuItem.secondOption;
             secondOptionBox.DisplayMember = "optionTitle";
+
+            if(currentMenuItem.mealName == "Main Meal")
+            {
+                itemPicture.Image = Properties.Resources.pizza;
+            }
+
+            else if (currentMenuItem.mealName == "Other Meals")
+            {
+                itemPicture.Image = Properties.Resources.other_meals;
+            }
+
+            else 
+            {
+                itemPicture.Image = Properties.Resources.drinks;
+            }
+
 
         }
 
@@ -105,14 +126,16 @@ namespace Alexandra_romans_pizza
 
         }
 
-        private void OrderForm_Load(object sender, EventArgs e)
-        {
 
-        }
 
         private void addToBagButton_Click(object sender, EventArgs e)
         {
             addToBag();
+        }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

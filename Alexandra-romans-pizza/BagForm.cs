@@ -1,4 +1,7 @@
-﻿using RomansPizzaLibrary;
+﻿// Developer  : DL Ntuli
+// Date : 15/ August/ 2022
+// Title: Alexandras Ramans Pizza Ordering App
+using RomansPizzaLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,12 +18,16 @@ namespace Alexandra_romans_pizza
 
     {
         List<OderItemModel> oderItemslist;
+        UserModel customer;
    
         private int totalPrice =0;
-        public BagForm(List<OderItemModel> oderItemModel)
+        public BagForm(List<OderItemModel> oderItemModel , UserModel userModel)
         {
             InitializeComponent();
             oderItemslist = oderItemModel;
+            customer = userModel;
+
+            PopulateCustomerDetails();
 
             foreach(OderItemModel item in oderItemslist)
             {
@@ -34,7 +41,20 @@ namespace Alexandra_romans_pizza
 
         private void checkoutButton_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void PopulateCustomerDetails()
+        {
+            userNameLabel.Text = customer.userName;
+            emailLabel.Text = customer.userEmail;
+            phoneNoLabel.Text = customer.userPhone;
+            adressLabel.Text = customer.userAdress;
+        }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

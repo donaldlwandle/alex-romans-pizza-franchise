@@ -1,4 +1,8 @@
-﻿using RomansPizzaLibrary;
+﻿// Developer  : DL Ntuli
+// Date : 15/ August/ 2022
+// Title: Alexandras Ramans Pizza Ordering App
+
+using RomansPizzaLibrary;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -76,6 +80,11 @@ namespace Alexandra_romans_pizza
                 this.Close();
 
             }
+        }
+
+        private void closeBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

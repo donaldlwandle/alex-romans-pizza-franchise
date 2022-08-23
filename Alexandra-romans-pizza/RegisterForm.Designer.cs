@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,6 +39,8 @@
             this.phoneNumberBox = new System.Windows.Forms.TextBox();
             this.adressbox = new System.Windows.Forms.TextBox();
             this.registerButton = new System.Windows.Forms.Button();
+            this.closeBtn = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -45,7 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.label1.Location = new System.Drawing.Point(184, 31);
+            this.label1.Location = new System.Drawing.Point(148, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 32);
@@ -55,12 +58,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.label2.Location = new System.Drawing.Point(90, 109);
+            this.label2.Location = new System.Drawing.Point(73, 109);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 17);
+            this.label2.Size = new System.Drawing.Size(142, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Name(s) and surname";
             // 
@@ -69,19 +72,19 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.label3.Location = new System.Drawing.Point(90, 185);
+            this.label3.Location = new System.Drawing.Point(73, 185);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "email";
+            this.label3.Text = "Email";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.label4.Location = new System.Drawing.Point(90, 266);
+            this.label4.Location = new System.Drawing.Point(73, 266);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 17);
@@ -93,7 +96,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.label5.Location = new System.Drawing.Point(90, 346);
+            this.label5.Location = new System.Drawing.Point(73, 346);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 17);
@@ -106,9 +109,9 @@
             this.nameBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nameBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.nameBox.Location = new System.Drawing.Point(94, 141);
+            this.nameBox.Location = new System.Drawing.Point(77, 141);
             this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(290, 25);
+            this.nameBox.Size = new System.Drawing.Size(244, 25);
             this.nameBox.TabIndex = 5;
             // 
             // emailBox
@@ -117,9 +120,9 @@
             this.emailBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.emailBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.emailBox.Location = new System.Drawing.Point(94, 218);
+            this.emailBox.Location = new System.Drawing.Point(77, 218);
             this.emailBox.Name = "emailBox";
-            this.emailBox.Size = new System.Drawing.Size(290, 25);
+            this.emailBox.Size = new System.Drawing.Size(244, 25);
             this.emailBox.TabIndex = 6;
             // 
             // phoneNumberBox
@@ -128,9 +131,9 @@
             this.phoneNumberBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.phoneNumberBox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phoneNumberBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.phoneNumberBox.Location = new System.Drawing.Point(94, 299);
+            this.phoneNumberBox.Location = new System.Drawing.Point(77, 299);
             this.phoneNumberBox.Name = "phoneNumberBox";
-            this.phoneNumberBox.Size = new System.Drawing.Size(290, 25);
+            this.phoneNumberBox.Size = new System.Drawing.Size(244, 25);
             this.phoneNumberBox.TabIndex = 7;
             // 
             // adressbox
@@ -139,9 +142,9 @@
             this.adressbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.adressbox.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.adressbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(209)))), ((int)(((byte)(217)))));
-            this.adressbox.Location = new System.Drawing.Point(94, 378);
+            this.adressbox.Location = new System.Drawing.Point(77, 378);
             this.adressbox.Name = "adressbox";
-            this.adressbox.Size = new System.Drawing.Size(290, 25);
+            this.adressbox.Size = new System.Drawing.Size(244, 25);
             this.adressbox.TabIndex = 8;
             // 
             // registerButton
@@ -151,21 +154,33 @@
             this.registerButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registerButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.registerButton.Location = new System.Drawing.Point(94, 433);
+            this.registerButton.Location = new System.Drawing.Point(77, 429);
             this.registerButton.Name = "registerButton";
-            this.registerButton.Size = new System.Drawing.Size(290, 32);
+            this.registerButton.Size = new System.Drawing.Size(244, 36);
             this.registerButton.TabIndex = 9;
             this.registerButton.Text = "Register";
             this.registerButton.UseVisualStyleBackColor = false;
             this.registerButton.Click += new System.EventHandler(this.registerButton_Click);
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.Image = ((System.Drawing.Image)(resources.GetObject("closeBtn.Image")));
+            this.closeBtn.Location = new System.Drawing.Point(366, 12);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(20, 20);
+            this.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.closeBtn.TabIndex = 10;
+            this.closeBtn.TabStop = false;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(17)))), ((int)(((byte)(23)))));
-            this.ClientSize = new System.Drawing.Size(486, 538);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.ClientSize = new System.Drawing.Size(400, 518);
+            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.registerButton);
             this.Controls.Add(this.adressbox);
             this.Controls.Add(this.phoneNumberBox);
@@ -177,9 +192,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RegisterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Romans Pizza";
+            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +215,7 @@
         private System.Windows.Forms.TextBox phoneNumberBox;
         private System.Windows.Forms.TextBox adressbox;
         private System.Windows.Forms.Button registerButton;
+        private System.Windows.Forms.PictureBox closeBtn;
     }
 }
 

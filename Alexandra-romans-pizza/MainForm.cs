@@ -1,4 +1,6 @@
-﻿
+﻿// Developer  : DL Ntuli
+// Date : 15/ August/ 2022
+// Title: Alexandras Ramans Pizza Ordering App
 using RomansPizzaLibrary;
 using System;
 using System.Collections.Generic;
@@ -30,70 +32,17 @@ namespace Alexandra_romans_pizza
             createMenuItems();
 
             
-        }
-
-        private void pizzasLabel_Click(object sender, EventArgs e)
-        {
             
-        }
-
-        private void createMenuItems()
-        {
-            //create MainMeal item
-            pizzaMeal = new MealItemModel( "Main Meal" , 80, "Flavor" ,"Size");
-
-            //create other meals item
-            otherMeal = new MealItemModel("Other Meals", 50, "Select meal" , "Size" );
-            
-
-            // create drinks items
-            drinks = new MealItemModel("Drinks", 12, "Select Drink" ,"Size" );
-            
-
-
 
             
         }
 
-        private  void AddOrder( MealItemModel mealItem)
-        {
-            
-            if(user != null && user.userName.Length > 1)
-            {
-                //Open add Order Form
-                OrderForm orderForm = new OrderForm(mealItem , this);
-                
-                orderForm.ShowDialog();
-            }
-            else
-            {
-                /// Open RegisterForm
-                RegisterForm registerForm = new RegisterForm(this);
-                registerForm.ShowDialog();
-            }
-        }
-
-
-
-        public void UserCreated(UserModel userModel)
-        {
-            // asign the created user
-            user = userModel;
-
-            
-        }
-
-        private void initializeList()
-        {
-
-        }
-
-
+        // ############################################### Event Listeners #############################################
         private void addPizzaBtn_Click(object sender, EventArgs e)
         {
 
             List<OptionModel> option1List = new List<OptionModel>();
-            option1List.Add(new OptionModel( "Main Meal", 0));
+            option1List.Add(new OptionModel("Main Meal", 0));
             option1List.Add(new OptionModel("Margherita : +R7", 7));
             option1List.Add(new OptionModel("BBQ Chicken : +R11", 11));
             option1List.Add(new OptionModel("Chicken & Mushroom : +R11", 11));
@@ -128,7 +77,7 @@ namespace Alexandra_romans_pizza
             option1List.Add(new OptionModel("Cheese grillers : R50", 0));
             option1List.Add(new OptionModel("Hot wings : R 46", -4));
             option1List.Add(new OptionModel("Romans hell's chips : R15", -35));
-            
+
 
             List<OptionModel> option2List = new List<OptionModel>();
             option2List.Add(new OptionModel("Small ", 0));
@@ -140,23 +89,38 @@ namespace Alexandra_romans_pizza
             otherMeal.firstOption = option1List;
             otherMeal.secondOption = option2List;
 
-            
+
             AddOrder(otherMeal);
         }
 
         private void orderBag_Click(object sender, EventArgs e)
         {
             //start bag form
-            if(orderItems.Count > 0)
+            if (orderItems.Count > 0)
             {
-                BagForm bagForm = new BagForm(orderItems);
+                BagForm bagForm = new BagForm(orderItems, user);
                 bagForm.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Your Bag is Empty ,Click Add button to place an Order");
             }
-            
+
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void maximise_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minimise_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void addDrinksBtn_Click(object sender, EventArgs e)
@@ -179,9 +143,67 @@ namespace Alexandra_romans_pizza
             drinks.secondOption = option2List;
 
 
-            
+
             AddOrder(drinks);
         }
+
+
+        //################################################ Utils ########################################################
+
+        private void createMenuItems()
+        {
+            //create MainMeal item
+            pizzaMeal = new MealItemModel( "Main Meal" , 80, "Flavor" ,"Size");
+            
+
+            //create other meals item
+            otherMeal = new MealItemModel("Other Meals", 50, "Select meal" , "Size" );
+            
+
+
+            // create drinks items
+            drinks = new MealItemModel("Drinks", 12, "Select Drink" ,"Size" );
+            
+
+
+
+
+
+
+        }
+
+        private  void AddOrder( MealItemModel mealItem)
+        {
+            
+            if(user != null && user.userName.Length > 1)
+            {
+                //Open add Order Form
+                OrderForm orderForm = new OrderForm(mealItem , this);
+                
+                orderForm.ShowDialog();
+            }
+            else
+            {
+                /// Open RegisterForm
+                RegisterForm registerForm = new RegisterForm(this);
+                registerForm.ShowDialog();
+            }
+        }
+
+
+
+
+        //############################################################ InterFaces ################################################
+        public void UserCreated(UserModel userModel)
+        {
+            // asign the created user
+            user = userModel;
+
+            
+        }
+
+
+
 
         public void OrderCreated(OderItemModel oderItemModel)
         {

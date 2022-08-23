@@ -28,15 +28,9 @@ namespace Alexandra_romans_pizza
             customer = userModel;
 
             PopulateCustomerDetails();
+            PopulateOrderList();
 
-            foreach(OderItemModel item in oderItemslist)
-            {
-                
-                this.cartBox.Items.Add(item.itemName + "               : R" + item.itemPrice);
-                totalPrice += item.itemPrice;
-            }
 
-            totalPriceLabel.Text = "Total : R" + totalPrice;
         }
 
         private void checkoutButton_Click(object sender, EventArgs e)
@@ -50,6 +44,18 @@ namespace Alexandra_romans_pizza
             emailLabel.Text = customer.userEmail;
             phoneNoLabel.Text = customer.userPhone;
             adressLabel.Text = customer.userAdress;
+        }
+
+        private void PopulateOrderList()
+        {
+            foreach (OderItemModel item in oderItemslist)
+            {
+
+                this.cartBox.Items.Add(item.itemName + "               : R" + item.itemPrice);
+                totalPrice += item.itemPrice;
+            }
+
+            totalPriceLabel.Text = "Total : R" + totalPrice;
         }
 
         private void closeBtn_Click(object sender, EventArgs e)
